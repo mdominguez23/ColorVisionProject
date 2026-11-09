@@ -4,7 +4,7 @@ Brightness checker
 
 **version 1.0**
 
-MY program uses a palette in hex that the user can choose from. The user also gets a menu from different types
+My program uses a palette in hex that the user can choose from. The user also gets a menu from different types
 of colorblindess'. This menu can be used so that the user can choose their type of blindness so that
 the compiler can determine the difference of the brightness of certain colors more accurately. This is so 
 the user can save themselves from colors that are harder to distinguish depending on their colorblidness.
