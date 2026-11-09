@@ -156,11 +156,15 @@ void simulateColor(int visionType, int &r, int &g, int &b) {
             newG =  0.114503 * r + 0.786281 * g + 0.099216 * b;
             newB = -0.003882 * r - 0.048116 * g + 1.051998 * b;
             break;
-        case 2:   // deuteranopia
-            
+        case 2:
+            newR =  0.367322·r + 0.860646·g − 0.227968·b
+            newG =  0.280085·r + 0.672501·g + 0.047413·b
+            newB = −0.011820·r + 0.042940·g + 0.968881·b   // deuteranopia
             break;
-        case 3:   // tritanopia
-            
+        case 3:
+            newR =  1.255528·r − 0.076749·g − 0.178779·b
+            newG = −0.078411·r + 0.930809·g + 0.147602·b
+            newB =  0.004733·r + 0.691367·g + 0.303900·b  // tritanopia
             break;
         default:  // normal vision: no change
             return;
