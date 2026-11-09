@@ -50,7 +50,7 @@ int main() {
             cout << "Color " << i + 1 << " - enter hex code (like #FF8000): ";
             cin >> hexInput;
             valid = hexToRGB(hexInput, red, green, blue);
-            // YOUR CODE: if not valid, print an error message
+           
         }
 
         hexCodes[i] = hexInput;
@@ -60,7 +60,7 @@ int main() {
 
     // ---------- 4. Open the report file ----------
     ofstream report("palette_report.txt");
-    // YOUR CODE: if (!report), print an error message
+    
 
     // ---------- 5. Compare every pair ----------
     int i = 0;
@@ -144,8 +144,6 @@ int hexDigitValue(char ch) {
     }
 }
 
-// Changes r, g, b to approximate how the color looks to a viewer
-// with the chosen type of color blindness.
 
 void simulateColor(int visionType, int &r, int &g, int &b) {
     double newR = r;
